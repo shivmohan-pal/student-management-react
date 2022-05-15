@@ -1,34 +1,179 @@
 .App {
   text-align: center;
+  max-width: 1800px;
+  margin: auto;
+}
+header {
+  background: rgb(116, 116, 156);
+  padding:5px 0;
+  color:white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+}
+.Home {
+  padding: 10px;
+}
+.Home svg {
+  cursor: pointer;
+}
+.Home svg:active {
+  opacity: 0.5;
+}
+.Card {
+  background: rgb(193, 193, 220);
+  position:relative;
+  display:inline-block;
+  max-width: 230px;
+  border:1px solid gray;
+  border-radius: 1em;
+  padding:1px;
+  transition: all 0.3s ease;
+  margin:12px;
+}
+.Card:hover {
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 8px;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Card hr {
+  border-width: 0.25px;
+  margin:5px auto;
+}
+.Card h5 {
+  margin:4px auto;
+  font-size: 11px;
+}
+.names {
+  font-weight: 100;
+}
+.family-detail {
+  text-align: left;
+  padding:0 10px;
+}
+.address {
+  padding:0 10px;
+}
+.address h5 {
+  text-decoration: underline ;
+}
+.address p {
+  font-weight: 200;
+  font-size: 0.75em;
+  box-sizing: border-box;
+}
+.reg-date {
+ padding: 0 10px;
+
+}
+.reg-date p {
+  font-weight: 400;
+  font-size: 9px;
+  margin:5px auto;
 }
 
-@keyframes App-logo-spin {
+.Avatar {
+  position: relative;
+  margin:4px;
+}
+.Avatar img {
+  padding:4px;
+  border:0.5px solid gray;
+  border-radius: 50%;
+  margin:auto;
+}
+.age {
+  font-size: small;
+}
+
+
+.input {
+  padding: 10px;
+  width: 80%;
+  max-width: 800px;
+  background: transparent;
+  height: 1rem;
+  border: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 18px;
+  color: rgb(112, 112, 168);
+  margin: 10px auto;
+}
+input:active, input:hover {
+  box-shadow: 0 0 2px 2px rgba(112, 112, 168, 0.5);
+}
+.input:focus ,form input:focus {
+  outline: none;
+}
+
+
+.addCard {
+  margin:4px;
+  display:inline-block;
+  cursor: pointer;
+}
+.addCard:active{
+  opacity: 0.5;
+}
+.addCard svg {vertical-align: middle;}
+.addCard span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.AddStudent {
+ margin:10px auto;
+}
+.AddStudent form {
+  margin:10px auto;
+}
+form fieldset {
+  border-radius: 4px;
+}
+
+form div {
+  display: inline-block;
+  margin: 10px;
+}
+form input {
+  border-radius: 5px;
+  border: none;
+  width: 15rem;
+  height: 1.5rem;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+form input:active {
+
+}
+form button {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px auto;
+  border-radius: 50%;
+  border:none;
+  background-color: rgb(112,112,168);
+  color:white;
+  padding:4px;
+}
+form button *{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button:active{
+  opacity: 0.5;
+}
+
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
